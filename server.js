@@ -36,7 +36,8 @@ const homeRouter = require("./controllers/homeController");
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173",
+    "https://main--soundscope.netlify.app"]
   })
 );
 app.options("*", cors());
