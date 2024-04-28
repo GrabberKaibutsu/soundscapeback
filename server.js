@@ -22,6 +22,7 @@ const reviewRoutes = require("./controllers/reviewController");
 const searchRoutes = require("./controllers/searchController");
 const userRouter = require("./controllers/userController");
 const homeRouter = require("./controllers/homeController");
+const playlistRouter = require('./controllers/songsController');
 
 // liveReloadServer.watch(path.join(__dirname, "../public"));
 
@@ -54,6 +55,7 @@ app.use("/reviews", reviewRoutes);
 app.use("/search", searchRoutes);
 app.use("/users", userRouter);
 app.use("/home", homeRouter);
+app.use('/api', playlistRouter);
 
 // Basic route for homepage
 app.get("/", (req, res) => {
