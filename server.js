@@ -41,7 +41,8 @@ app.use(
   cors({
     credentials: true,
     origin: ["http://localhost:5173",
-    "https://main--soundscope.netlify.app"]
+    "https://main--soundscope.netlify.app",
+    "https://soundscope.netlify.app"]
   })
 );
 app.options("*", cors());
