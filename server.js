@@ -24,6 +24,9 @@ const userRouter = require("./controllers/userController");
 const homeRouter = require("./controllers/homeController");
 const playlistRouter = require('./controllers/songsController');
 
+
+
+
 // liveReloadServer.watch(path.join(__dirname, "../public"));
 
 // app.use(connectLiveReload());
